@@ -1,8 +1,54 @@
 {
   "layerTree": [
-    "e220d708-c851-4f54-b9ae-9c56c5e04480"
+    "e220d708-c851-4f54-b9ae-9c56c5e04480",
+    "58c06002-1858-4e77-9cc1-d5899acb6b2f",
+    "6bbbae5c-f6fd-4f64-84f4-11283de88729"
   ],
   "layers": {
+    "58c06002-1858-4e77-9cc1-d5899acb6b2f": {
+      "filters": {
+        "appliedFilters": [
+          {
+            "feature": null,
+            "operator": null,
+            "value": null
+          }
+        ],
+        "logicalOp": null
+      },
+      "name": "SEEC and NSIDC",
+      "parameters": {
+        "color": null,
+        "opacity": 1.0,
+        "source": "2675a174-6e94-4b56-9ece-2741ff5b118b",
+        "symbologyState": null,
+        "type": "line"
+      },
+      "type": "VectorLayer",
+      "visible": true
+    },
+    "6bbbae5c-f6fd-4f64-84f4-11283de88729": {
+      "filters": {
+        "appliedFilters": [
+          {
+            "feature": null,
+            "operator": null,
+            "value": null
+          }
+        ],
+        "logicalOp": null
+      },
+      "name": "Sanitas",
+      "parameters": {
+        "color": null,
+        "opacity": 1.0,
+        "source": "3f5b9ff0-f1d7-4444-bc7c-535f16477a96",
+        "symbologyState": null,
+        "type": "line"
+      },
+      "type": "VectorLayer",
+      "visible": true
+    },
     "e220d708-c851-4f54-b9ae-9c56c5e04480": {
       "name": "Basemap",
       "parameters": {
@@ -16,19 +62,98 @@
   "options": {
     "bearing": 0.0,
     "extent": [
-      -16943218.227214247,
-      1813884.940591243,
-      -5539788.477108987,
-      8661878.212775469
+      -11721734.69240106,
+      4863329.677605173,
+      -11708419.630523702,
+      4872049.8178224005
     ],
-    "latitude": 42.51130981651042,
-    "longitude": -100.98414277727615,
+    "latitude": 40.012024133656354,
+    "longitude": -105.23832868781196,
     "pitch": 0.0,
     "projection": "EPSG:3857",
-    "zoom": 4.3991367692285905
+    "zoom": 12.904156426938014
   },
   "schemaVersion": "0.5.0",
   "sources": {
+    "2675a174-6e94-4b56-9ece-2741ff5b118b": {
+      "name": "SEEC and NSIDC Source",
+      "parameters": {
+        "data": {
+          "bbox": null,
+          "features": [
+            {
+              "bbox": null,
+              "geometry": {
+                "bbox": null,
+                "coordinates": [
+                  -105.24206599999948,
+                  40.01007767367196
+                ],
+                "type": "Point"
+              },
+              "id": null,
+              "properties": {
+                "Address": "4001 Discovery Dr., Boulder, CO",
+                "Name": "Sustainability, Energy, and Environment Community (SEEC) Building"
+              },
+              "type": "Feature"
+            },
+            {
+              "bbox": null,
+              "geometry": {
+                "bbox": null,
+                "coordinates": [
+                  -105.25271574468819,
+                  40.01262175838934
+                ],
+                "type": "Point"
+              },
+              "id": null,
+              "properties": {
+                "Address": "National Snow and Ice Data Center CIRES, 449 UCB University of Colorado Boulder",
+                "Name": "National Snow and Ice Data Center (NSIDC)"
+              },
+              "type": "Feature"
+            }
+          ],
+          "type": "FeatureCollection"
+        },
+        "path": null,
+        "valid": null
+      },
+      "type": "GeoJSONSource"
+    },
+    "3f5b9ff0-f1d7-4444-bc7c-535f16477a96": {
+      "name": "Sanitas Source",
+      "parameters": {
+        "data": {
+          "bbox": null,
+          "features": [
+            {
+              "bbox": null,
+              "geometry": {
+                "bbox": null,
+                "coordinates": [
+                  -105.24737814694656,
+                  40.02179525030554
+                ],
+                "type": "Point"
+              },
+              "id": null,
+              "properties": {
+                "Address": "3550 Frontier Ave ste a, Boulder, CO 80301",
+                "Name": "Sanitas Brewing"
+              },
+              "type": "Feature"
+            }
+          ],
+          "type": "FeatureCollection"
+        },
+        "path": null,
+        "valid": null
+      },
+      "type": "GeoJSONSource"
+    },
     "8c8bb2c9-59a5-4962-9835-bd4eada4a4ce": {
       "name": "Esri.WorldGrayCanvas",
       "parameters": {
